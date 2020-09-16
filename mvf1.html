@@ -243,13 +243,87 @@
          <h4 id="mvf1Mockups">Mockups</h4>
          <div>
             <img src="https://i.ibb.co/xfFhsmp/MVF1.jpg" alt="MVF1" border="0" width="800" height="500"></img>
-            <center><p><a href="https://drive.google.com/drive/u/0/folders/1V1LDGmTwggH6jQUTDydTgu6bA2kWZNQx">JPEG Designs</a> | <a href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma Prototype</a></p></center>
+            <center>
+               <p><a href="https://drive.google.com/drive/u/0/folders/1V1LDGmTwggH6jQUTDydTgu6bA2kWZNQx">JPEG
+                     Designs</a> | <a
+                     href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma
+                     Prototype</a></p>
+            </center>
          </div>
 
          <br>
 
          <h4 id="mvf1ValidationCriteria">Validation Criteria</h4>
-         <p>SOMETHING SOMETHING SOMETHING SOMETHING </p>
+         <p>There are several validation types that can be used to check data and information that is being entered by a
+            user.</p>
+         <ul>
+            <li><b>Format check: </b>
+               this is used to check if data is in the correct format. In relation to the registration page, this can
+               be used when entering a date of birth, email address, phone number or home address, as these are
+               examples of data fields that need to be entered in a specific format. The date could also be validated
+               by utilising a date picker on the device.</li>
+            <br>
+            <li><b>Existence check: </b>this is used to check if data has been entered at all. In relation to the
+               registration page, all fields such as name, email, etc will need to be validated as having something
+               entered in the field.</li>
+            <br>
+            <li><b>Lookup table: </b>this is used to check for acceptable values in a table. In relation to the
+               registration page, when a user enters an address, it needs to be cross checked using an external database
+               such as google maps, in order to confirm that that the address exists. Additionally, when a user is
+               adding a vehicle to their account, they need to enter make and model, and this can be checked through an
+               external vehicle database, such as using the license plate through a VicRoads registration check to get
+               the vehicle details.</li>
+            <br>
+            <li><b>Length check: </b>this is used to check if data is of a particular length. In relation to the
+               registration page, a password length should be made clear to the user, and this length should be checked
+               upon registration.</li>
+            <br>
+            <li><b>Type check: </b>this is used to check the data type of the information entered. In relation to the
+               registration page, a type check can be performed on a phone number (numbers only).</li>
+            <br>
+         </ul>
+         <p>We also need to determine a list of acceptance criteria to help us set a user’s expectation for our
+            application. This can be done by generating possible scenarios that a user may experience and outline the
+            expectations of that scenario. We can generate this using the Given/When/Then template. </p>
+         <ul>
+            <p><b>Scenario: </b>User creates an account and logs in</p>
+            <p>"Given I'm in a role of a new user</p>
+            <p>When I open the register page</p>
+            <br>
+            <p>Then the system shows me the personal details form containing “First Name”, “Last Name”, “Phone Number”,
+               “Home Address” and “Email Address” which are required fields </p>
+            <p>When I fill in the “First Name” field with my first name </p>
+            <p>And I fill in the “Last Name” field with my last name </p>
+            <p>And I fill in the “Phone Number” field with a valid phone number </p>
+            <p>And I fill in the “Home Address” field with a valid address </p>
+            <p>And I fill in the “Email Address” field with a valid email address </p>
+            <p>And I click the “Continue” button </p>
+            <br>
+            <p>Then the system shows me the vehicle details form containing “Vehicle Make”, “Vehicle Model”, “License
+               Plate” and “Account Password” which are required fields </p>
+            <p>When I fill in the “Vehicle Make” field with a valid vehicle make </p>
+            <p>And I fill in the “Vehicle Model” field with a valid vehicle model</p>
+            <p>And I fill in the “License Plate” field with my license plate number</p>
+            <p>And I fill in the “Account Password” field with a suitable password </p>
+            <p>And I click the “Finish Signup” button </p>
+            <br>
+            <p>Then the system shows me the login form containing “Phone Number”, “Password” and “I agree to the terms and conditions” which are required fields </p>
+            <p>When I fill in the “Phone Number” field with my phone number I used to register </p>
+            <p>And I fill in the “Password” field with my password I used to register </p>
+            <p>And I check the “I agree to the terms and conditions” checkbox </p>
+            <p>And I click the “Login” button </p>
+            <br>
+            <p>Then the system shows me my account dashboard where I can access all features that the app provides” </p>
+         </ul>
+         <br>
+         <p>We can also determine a list of other criteria and characteristics that this page should abide by. </p>
+         <ul>
+            <li><b>User friendly </b>instructions to get the user started on their journey with the Quick Park application.</li>
+            <br>
+            <li><b>Speed efficient </b>interface that is easy to navigate and can be filled out relatively quickly.</li>
+            <br>
+            <li><b>Step by step </b>prompts to fill out all required sections.</li>
+         </ul>
 
       </div>
    </div>
