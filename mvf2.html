@@ -136,11 +136,14 @@
                application to determine where they intend to go. The user will also have a list of frequent locations to
                select from if they have been known to go to certain places regularly. This will be in a small menu below
                the application.</li>
+               <br>
             <li>The user will then enter a date and time as to which they'll need the parking space. The user will also
                have to select which vehicle they are using from the list below.</li>
+               <br>
             <li>The application will then give a list of the closest free parking spaces based on the location the user
                wishes to go to. This will be a scroll-able menu, with also a choice of payment method needed at the
                bottom to know where it will be charged.</li>
+               <br>
             <li>Finally, the user will be given a summary of the booking to double check that all details are correct.
                Once they are, they may choose to either go back and change details, or accept have the transaction
                processed to their card.</li>
@@ -150,7 +153,7 @@
          <br>
 
          <h4 id="mvf2UserStories">User Stories</h4>
-         <p style="font-style: italic;">"As a manager, I want to save my time so that I don’t arrive late to work"</p>
+         <p style="font-style: italic;">"As a manager, I want to save my time so that I don't arrive late to work"</p>
          <p>The quick booking feature should allow the user to swiftly and effortlessly make bookings within a given
             period. The users should find it convenient to navigate through and also be able to manage their time
             efficiently. The Quick Park application should be able to prompt users to select, confirm and finalise the
@@ -228,14 +231,72 @@
          <h4 id="mvf2Mockups">Mockups</h4>
          <div>
             <img src="https://i.ibb.co/8NhC0T1/MVF2.jpg" alt="MVF2" border="0" width="800" height="500"></img>
-            <center><p><a href="https://drive.google.com/drive/u/0/folders/1Tiz3enhd8L64gKIMj4IJsHXz-3QnEfrf">JPEG Designs</a> | <a href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma Prototype</a></p></center>
+            <center>
+               <p><a href="https://drive.google.com/drive/u/0/folders/1Tiz3enhd8L64gKIMj4IJsHXz-3QnEfrf">JPEG
+                     Designs</a> | <a
+                     href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma
+                     Prototype</a></p>
+            </center>
          </div>
 
          <br>
 
          <h4 id="mvf2ValidationCriteria">Validation Criteria</h4>
-         <p>SOMETHING SOMETHING SOMETHING SOMETHING </p>
-
+         <p>There are several validation types that can be used to check data and information that is being entered by a
+            user.</p>
+         <ul>
+            <li><b>Format check: </b>this is used to check if data is in the correct format. In relation to the quick
+               bookings page, this can be used when the user enters a date and time for their parking reservation, as
+               these are examples of data fields that need to be entered in a specific format. The date and time could
+               also be validated by utilising a date / time picker on the device.</li>
+            <br>
+            <li><b>Existence check: </b>this is used to check if data has been entered at all. In relation to the quick
+               bookings page, all fields such as location, date, time, vehicle, parking space and payment method will
+               need to be validated as having something entered in the field.</li>
+            <br>
+            <li><b>Lookup table: </b>this is used to check for acceptable values in a table. In relation to the quick
+               bookings page, when the user specifies the parking address, it needs to be cross checked using an
+               external database such as google maps, in order to confirm that the address exists.</li>
+            <br>
+         </ul>
+         <p>We also need to determine a list of acceptance criteria to help us set a user's expectation for our
+            application. This can be done by generating possible scenarios that a user may experience and outline the
+            expectations of that scenario. </p>
+            <ul>
+               <p><b>Scenario: </b>User makes a booking</p>
+               <p>"Given I'm in a role of a registered user</p>
+               <p>When I open the bookings page</p>
+               <br>
+               <p>Then the system shows me location form containing "Location of Choice" and "Frequent Locations" of which only one of these is required</p>
+               <p>When I fill in "Location of Choice" with a valid location</p>
+               <p>Or When I select a "Frequent Location" from the provided list</p>
+               <p>And I click the "Continue" button</p>
+               <br>
+               <p>Then the system shows me the booking form containing "Date", "Time" and "Choose a Vehicle" which are required fields </p>
+               <p>When I fill in the "Date" with a valid date</p>
+               <p>And I fill in the "Time" with a valid time </p>
+               <p>And I "Choose a Vehicle" by using the checkboxes </p>
+               <p>And I click the "Next" button </p>
+               <br>
+               <p>Then the system shows me the booking form containing "Select Available Parking Space" and "Payment" which are required fields </p>
+               <p>And I "Select Available Parking Space" by using the checkboxes </p>
+               <p>And I select a "Payment Method" by using the checkboxes </p>
+               <p>And I click the "Next" button </p>
+               <br>
+               <p>Then the system shows me the booking summary screen </p>
+               <p>And I click the "Confirm Booking" button </p>
+               <br>
+               <p>Then the system shows me the booking confirmed screen"</p>
+               <br>
+            </ul>
+            <p>We can also determine a list of other criteria and characteristics that this page should abide by. </p>
+            <ul>
+               <li><b>Clean interface </b>should be presented to the user as to guide them when making a booking, rather than overwhelming them</li>
+               <br>
+               <li><b>Confirmation </b>of booking and final price</li>
+               <br>
+               <li><b>Summary </b>of user booking history</li>
+            </ul>
 
       </div>
    </div>

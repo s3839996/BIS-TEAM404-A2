@@ -132,13 +132,15 @@
          <ul>
             <li>The first screen presented to the user will be a log in/register page, as you need an account and need
                to provide information in order to use the application. If choosing to log in, users will simply tap the
-               log in button and enter their login details (e.g, username and password) where as if they choose to ‘sign
-               up,’ they will be greeted with a different screen of text boxes and dropdown menus in order to fill out
+               log in button and enter their login details (e.g, username and password) where as if they choose to 'sign
+               up,' they will be greeted with a different screen of text boxes and dropdown menus in order to fill out
                their personal information and account settings.
             </li>
-            <li>Once their account is created, they will have a basic menu with the option to either ‘View Profile,’
-               ‘Book Parking,’ ‘Contact Us,’ ‘Manage Payment’ and ‘Log Out.’ Each of these will take the user to a
+            <br>
+            <li>Once their account is created, they will have a basic menu with the option to either 'View Profile,'
+               'Book Parking,' 'Contact Us,' 'Manage Payment' and 'Log Out.' Each of these will take the user to a
                different page, self explanatory by their name. </li>
+               <br>
             <li>Viewing their profile, the user may choose to put a picture in and have it displayed as their icon. The
                profile will show the users most recent booking, their monthly booking data and their registered
                vehicles. They may choose to register another vehicle to the account if they want, with no limit to how
@@ -153,7 +155,7 @@
          <p style="font-style: italic;">"As a time-compromised user, I want registration and sign up to be quick and
             easy, with minimum interaction needed to sign up"</p>
          <p>Individuals who are time compromised will require the registration to be quick and effortless. The
-            application registration process shouldn’t take too long, and the user shouldn’t be required to enter main
+            application registration process shouldn't take too long, and the user shouldn't be required to enter main
             fields of data just to get to the booking page. This means that only important information regarding the
             user's contact details and payment details are required to be asked and collected. The details collected
             from the user should be limited to name, address, contact and payment details. Unlike other registration
@@ -170,10 +172,10 @@
             The application should be able to guide the user to step by step go through the registration and profile,
             quick bookings, live tracking, payment and contact/feedback. The user should be prompted to complete one
             step and move on to the next one without being overwhelmed by multiple features and sections, where they
-            aren’t able to satisfactorily navigate through the application. This allows the user to connect better with
+            aren't able to satisfactorily navigate through the application. This allows the user to connect better with
             the application and the easier the user finds the application the more likely they are going to use it to
             make quick parking bookings. Getting user satisfaction levels high is very important and can drive the
-            demand for ‘Quick Park’ application growth through word of mouth and pure convenience. </p>
+            demand for 'Quick Park' application growth through word of mouth and pure convenience. </p>
 
          <br>
 
@@ -282,7 +284,7 @@
                registration page, a type check can be performed on a phone number (numbers only).</li>
             <br>
          </ul>
-         <p>We also need to determine a list of acceptance criteria to help us set a user’s expectation for our
+         <p>We also need to determine a list of acceptance criteria to help us set a user's expectation for our
             application. This can be done by generating possible scenarios that a user may experience and outline the
             expectations of that scenario. We can generate this using the Given/When/Then template. </p>
          <ul>
@@ -290,30 +292,30 @@
             <p>"Given I'm in a role of a new user</p>
             <p>When I open the register page</p>
             <br>
-            <p>Then the system shows me the personal details form containing “First Name”, “Last Name”, “Phone Number”,
-               “Home Address” and “Email Address” which are required fields </p>
-            <p>When I fill in the “First Name” field with my first name </p>
-            <p>And I fill in the “Last Name” field with my last name </p>
-            <p>And I fill in the “Phone Number” field with a valid phone number </p>
-            <p>And I fill in the “Home Address” field with a valid address </p>
-            <p>And I fill in the “Email Address” field with a valid email address </p>
-            <p>And I click the “Continue” button </p>
+            <p>Then the system shows me the personal details form containing "First Name", "Last Name", "Phone Number",
+               "Home Address" and "Email Address" which are required fields </p>
+            <p>When I fill in the "First Name" field with my first name </p>
+            <p>And I fill in the "Last Name" field with my last name </p>
+            <p>And I fill in the "Phone Number" field with a valid phone number </p>
+            <p>And I fill in the "Home Address" field with a valid address </p>
+            <p>And I fill in the "Email Address" field with a valid email address </p>
+            <p>And I click the "Continue" button </p>
             <br>
-            <p>Then the system shows me the vehicle details form containing “Vehicle Make”, “Vehicle Model”, “License
-               Plate” and “Account Password” which are required fields </p>
-            <p>When I fill in the “Vehicle Make” field with a valid vehicle make </p>
-            <p>And I fill in the “Vehicle Model” field with a valid vehicle model</p>
-            <p>And I fill in the “License Plate” field with my license plate number</p>
-            <p>And I fill in the “Account Password” field with a suitable password </p>
-            <p>And I click the “Finish Signup” button </p>
+            <p>Then the system shows me the vehicle details form containing "Vehicle Make", "Vehicle Model", "License
+               Plate" and "Account Password" which are required fields </p>
+            <p>When I fill in the "Vehicle Make" field with a valid vehicle make </p>
+            <p>And I fill in the "Vehicle Model" field with a valid vehicle model</p>
+            <p>And I fill in the "License Plate" field with my license plate number</p>
+            <p>And I fill in the "Account Password" field with a suitable password </p>
+            <p>And I click the "Finish Signup" button </p>
             <br>
-            <p>Then the system shows me the login form containing “Phone Number”, “Password” and “I agree to the terms and conditions” which are required fields </p>
-            <p>When I fill in the “Phone Number” field with my phone number I used to register </p>
-            <p>And I fill in the “Password” field with my password I used to register </p>
-            <p>And I check the “I agree to the terms and conditions” checkbox </p>
-            <p>And I click the “Login” button </p>
+            <p>Then the system shows me the login form containing "Phone Number", "Password" and "I agree to the terms and conditions" which are required fields </p>
+            <p>When I fill in the "Phone Number" field with my phone number I used to register </p>
+            <p>And I fill in the "Password" field with my password I used to register </p>
+            <p>And I check the "I agree to the terms and conditions" checkbox </p>
+            <p>And I click the "Login" button </p>
             <br>
-            <p>Then the system shows me my account dashboard where I can access all features that the app provides” </p>
+            <p>Then the system shows me my account dashboard where I can access all features that the app provides" </p>
          </ul>
          <br>
          <p>We can also determine a list of other criteria and characteristics that this page should abide by. </p>
