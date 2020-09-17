@@ -140,10 +140,10 @@
                they may choose to remove a payment method if needed. If this is their first time entering payment
                information, there will only be given a button that says 'Add Payment Method,' which will also be present
                if an existing user chooses to add more payment methods.</li>
-               <br>
+            <br>
             <li>A variety of payment options will be supported, such as credit card, PayPal, etc. These will be
                select-able when booking a parking space, and can be saved within the application.</li>
-               <br>
+            <br>
             <li>Each payment method will be represented by an icon of sorts, either of the card being used or an icon of
                the service being used (e.g, PayPal).</li>
          </ul>
@@ -221,13 +221,67 @@
          <h4 id="mvf4Mockups">Mockups</h4>
          <div>
             <img src="https://i.ibb.co/3ST4GMZ/MVF4.jpg" alt="MVF4" border="0" width="800" height="500"></img>
-            <center><p><a href="https://drive.google.com/drive/u/0/folders/1IdBjdifLVz6217XiL06chuqYaE-KiVQO">JPEG Designs</a> | <a href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma Prototype</a></p></center>
+            <center>
+               <p><a href="https://drive.google.com/drive/u/0/folders/1IdBjdifLVz6217XiL06chuqYaE-KiVQO">JPEG
+                     Designs</a> | <a
+                     href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma
+                     Prototype</a></p>
+            </center>
          </div>
 
          <br>
 
          <h4 id="mvf4ValidationCriteria">Validation Criteria</h4>
-         <p>SOMETHING SOMETHING SOMETHING SOMETHING </p>
+         <p>There are several validation types that can be used to check data and information that is being entered by a
+            user.</p>
+         <ul>
+            <li><b>Format check: </b>this is used to check if data is in the correct format. In relation to the payment
+               page, this can be used when entering the card number, expiry date, and CVV, which all have their
+               respective required formats. The expiry date can also be easily validating by utilising a date picker on
+               the device. </li>
+            <br>
+            <li><b>Existence check: </b>this is used to check if data has been entered at all. In relation to the
+               payment page, all fields will need to be validated as having data entered in the field.</li>
+            <br>
+            <li><b>Lookup table: </b>this is used to check for acceptable values in a table. In relation to the payment
+               page, when the user enters an expiry date, it will need to be a date greater than that current day,
+               rather than a past date.</li>
+            <br>
+            <li><b>Length check: </b>this is used to check if data is of a particular length. In relation to the payment
+               page, card number and CVV will need to be of their respective required lengths.</li>
+            <br>
+            <li><b>Type check: </b>this is used to check the data type of the information entered. In relation to the
+               payment page, a type check should be performed on the card number and CVV, as these can be numbers only.
+            </li>
+            <br>
+         </ul>
+         <p>We also need to determine a list of acceptance criteria to help us set a user's expectation for our
+            application. This can be done by generating possible scenarios that a user may experience and outline the
+            expectations of that scenario. </p>
+            <ul>
+               <p><b>Scenario: </b>User adds a payment method to their account</p>
+               <p>"Given I'm in a role of a registered user</p>
+               <p>When I open the manage payment page</p>
+               <br>
+               <p>Then the system shows a list of my payment methods</p>
+               <p>When I click the "Add new payment method button"</p>
+               <br>
+               <p>Then the system shows the add new payment method form containing "Cardholder Name", "Card Number", "Expiry" and "CVV" which are all required fields</p>
+               <p>When I fill in the "Cardholdder Name" field with my name</p>
+               <p>And I fill in the "Card Number" field with a valid card number</p>
+               <p>And I fill in the "Expiry" field with a valid date</p>
+               <p>And I fill in the "CVV" field with a valid CVV number</p>
+               <p>And I click the "Save Payment Button"</p>
+               <br>
+               <p>Then the system shows an updated list of my payment methods"</p>
+               <br>
+            </ul>
+            <p>We can also determine a list of other criteria and characteristics that this page should abide by. </p>
+            <ul>
+               <li><b>Visual feedback </b>so that the user is notified if they've made a mistake with entering the details</li>
+               <br>
+               <li><b>Multiple cards </b>should be able to be added to the account of the user</li>
+            </ul>
 
 
 
