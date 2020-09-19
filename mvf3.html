@@ -133,18 +133,18 @@
          <ul>
             <li>Will require use of Location services in order to accurately track user of the application and when they
                have reached their destination.</li>
-               <br>
+            <br>
             <li>Once the user has booked their desired parking spot, a map will appear with a direct path to the located
                parking space. This will give directions to the parking spot with on screen prompts, while also giving a
                clear map for the user to follow and prepare for upcoming turns, lane changes, etc.</li>
-               <br>
+            <br>
             <li>Once at the parking location, the countdown will replace the on screen map and slowly countdown,
                depending on how long the user has booked their parking space for.</li>
-               <br>
+            <br>
             <li>Once they have finished with the parking space, they may tap a button to end their session. This will
                bring them to the payment screen in which they will pay for the amount of time they booked the parking
                space for.</li>
-               <br>
+            <br>
             <li>Any extra time will be added on as +xx:xx, and the user will be charged extra in the final receipt. This
                will be calculated based on the extra time.</li>
          </ul>
@@ -213,13 +213,32 @@
          <h4 id="mvf3Mockups">Mockups</h4>
          <div>
             <img src="https://i.ibb.co/yfkdtdV/MVF3.jpg" alt="MVF3" border="0" width="800" height="500"></img>
-            <center><p><a href="https://drive.google.com/drive/u/0/folders/1swLu1kXbxeepwN3OO2yoGTP0Lumo6X-J">JPEG Designs</a> | <a href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma Prototype</a></p></center>
+            <center>
+               <p><a href="https://drive.google.com/drive/u/0/folders/1swLu1kXbxeepwN3OO2yoGTP0Lumo6X-J">JPEG
+                     Designs</a> | <a
+                     href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma
+                     Prototype</a></p>
+            </center>
          </div>
 
          <br>
 
          <h4 id="mvf3ValidationCriteria">Validation Criteria</h4>
-         <p>SOMETHING SOMETHING SOMETHING SOMETHING </p>
+         <p><b>Validation types: </b>The live tracking feature does not require the user to input any information,
+            instead they only need to select 'Yes' or 'No', therefore no validation checks need to be completed.</p>
+         <br>
+         <p>We need to determine a list of acceptance criteria to help us set a user’s expectation for our application.
+            This can be done by generating possible scenarios that a user may experience and outline the expectations of
+            that scenario. We can generate this using the Given/When/Then template.</p>
+            <br>
+            <ul>
+               <p><b>Scenario: </b>User arrives at destination and is asked if they would like directions to their booked parking space</p>
+               <p>"Given I have arrived at my destination</p>
+               <p>And I'm on the directions page</p>
+               <p>When I select directions to my car space</p>
+               <br>
+               <p>Then the system tells me where to go, and park</p>
+            </ul>
 
 
       </div>

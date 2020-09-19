@@ -137,7 +137,7 @@
                company via email, phone or even using feedback forms. The feedback forms will be sent directly to the
                developers, and a star rating out of 5 will be provided as well to help give an idea on how enjoyable the
                application is.</li>
-               <br>
+            <br>
             <li>The Email and Phone Number sections will each require handling from the internal functions of the phone,
                such as Apple's email and phone applications. A confirmation message will appear before leaving the app
                in case the user wants to back out or miss-tapped.</li>
@@ -208,13 +208,57 @@
          <h4 id="mvf5Mockups">Mockups</h4>
          <div>
             <img src="https://i.ibb.co/fxDwzY0/MVF5.jpg" alt="MVF5" border="0" width="800" height="500"></img>
-            <center><p><a href="https://drive.google.com/drive/u/0/folders/1mi1_H1SjL0WD9hDbgakibdIc_82t-Tku">JPEG Designs</a> | <a href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma Prototype</a></p></center>
+            <center>
+               <p><a href="https://drive.google.com/drive/u/0/folders/1mi1_H1SjL0WD9hDbgakibdIc_82t-Tku">JPEG
+                     Designs</a> | <a
+                     href="https://www.figma.com/proto/sI43oHu1MbykFfc9IxzmTX/MVF-Prototypes?node-id=2%3A25&scaling=min-zoom">Figma
+                     Prototype</a></p>
+            </center>
          </div>
 
          <br>
 
          <h4 id="mvf5ValidationCriteria">Validation Criteria</h4>
-         <p>SOMETHING SOMETHING SOMETHING SOMETHING </p>
+         <p>There are several validation types that can be used to check data and information that is being entered by a
+            user.</p>
+         <ul>
+            <li><b>Existence check: </b>this is used to check if data has been entered at all. In relation to the
+               feedback page, fields such as the subject and comment / query fields will need to be checked as
+               containing information.</li>
+            <br>
+            <li><b>Spell check: </b>this is used to check the spelling of words. In relation to the feedback page, all
+               fields containing the required feedback / queries should be spell checked ensure correctness and
+               consistency. By utilising a built-in word processor, or even an external dictionary, this can be easily
+               achieved.</li>
+            <br>
+         </ul>
+         <p>We also need to determine a list of acceptance criteria to help us set a user's expectation for our
+            application. This can be done by generating possible scenarios that a user may experience and outline the
+            expectations of that scenario. We can generate this using the Given/When/Then template.</p>
+            <ul>
+               <p><b>Scenario: </b>User submits a query</p>
+               <p>"Given I'm in a role of a registered user</p>
+               <p>When I open the "Contact Us" page</p>
+               <p>And I click the "Email" button</p>
+               <br>
+               <p>Then the system shows the contact form containing "Subject" and "Comments" which are required fields</p>
+               <p>When I fill in the "Subject" field with a subject</p>
+               <p>And I fill in the "Comments" field with my comments</p>
+               <p>And I click the "Submit" button</p>
+               <br>
+               <p>Then the system indicates that the form was submitted and returns to the "Contact Us" page"</p>
+               <br>
+               <p><b>Scenario: </b>User submits feedback</p>
+               <p>"Given I'm in a role of registered user</p>
+               <p>When I open the "Contact Us" page</p>
+               <p>And I click the "Feedback" button</p>
+               <br>
+               <p>Then the system shows the feedback form containing "Star Rating" and the required field "Comments"</p>
+               <p>When I full in the "Star Rating" using the clickable stars</p>
+               <p>And I fill in the "Comments" field with my comments</p>
+               <p>And I click the "Submit" button</p>
+               <br>
+               <p>Then the system indicates that the forrm was submitted and returns to the "Contact Us" page"</p>
 
 
 
